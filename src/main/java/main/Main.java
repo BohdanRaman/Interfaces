@@ -23,10 +23,14 @@ public class Main {
         System.out.println(gerbil);
         System.out.println();
         System.out.println(hamster);
-        System.out.println();;
+        System.out.println();
+        ;
 
         System.out.println("Task 15:");
         Animals animals = new Animals();
+        animals.setName("Tiger");
+        animals.setWeight(30);
+        System.out.println("name:" + animals.getName() + ", weight:" + animals.getWeight());
         animals.firstMethod(animals);
         animals.secondMethod(animals);
         animals.thirdMethod(animals);

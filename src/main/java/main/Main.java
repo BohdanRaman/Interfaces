@@ -1,5 +1,6 @@
 package main;
 
+import task_15.Animals;
 import task_7.Gerbil;
 import task_7.Hamster;
 import task_7.Mouse;
@@ -24,6 +25,11 @@ public class Main {
         System.out.println(hamster);
         System.out.println();;
 
-        System.out.println("Task 10:");
+        System.out.println("Task 15:");
+        Animals animals = new Animals();
+        animals.firstMethod(animals);
+        animals.secondMethod(animals);
+        animals.thirdMethod(animals);
+        animals.fourthMethod(animals);
     }
 }

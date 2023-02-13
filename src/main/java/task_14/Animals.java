@@ -1,4 +1,4 @@
-package task_15;
+package task_14;
 
 /**
  * Exercise 14: Create three interfaces, each with two methods. Inherit a new interface that combines the three, adding a new method.

@@ -1,6 +1,8 @@
 package main;
 
-import task_15.Animals;
+import task_13.Car;
+import task_14.Animals;
+import task_15.Dog;
 import task_7.Gerbil;
 import task_7.Hamster;
 import task_7.Mouse;
@@ -24,9 +26,19 @@ public class Main {
         System.out.println();
         System.out.println(hamster);
         System.out.println();
-        ;
 
-        System.out.println("Task 15:");
+        System.out.println("Task 13:");
+        Car car = new Car();
+        car.door(3);
+        car.typeCar();
+        car.engine();
+        car.getModel();
+        System.out.println(car.engine());
+        System.out.println(car.typeCar());
+        System.out.println(car.getModel());
+        System.out.println();
+
+        System.out.println("Task 14:");
         Animals animals = new Animals();
         animals.setName("Tiger");
         animals.setWeight(30);
@@ -35,5 +47,21 @@ public class Main {
         animals.secondMethod(animals);
         animals.thirdMethod(animals);
         animals.fourthMethod(animals);
+        System.out.println();
+
+        System.out.println("Task 15:");
+        Dog dog = new Dog();
+        dog.setName("Archi");
+        dog.setWeight(15);
+        System.out.println(("Dog name: " + dog.getName()) + ", dog weignt: " + dog.getWeight());
+        dog.speed();
+        dog.ageAnimals();
+        dog.eatMeals();
+        dog.eatVegetables();
+        dog.sizeBody();
+        dog.jump();
+        dog.sizeFoot();
+
+
     }
 }

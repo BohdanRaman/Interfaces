@@ -1,4 +1,4 @@
-package task_15;
+package task_14;
 
 public interface MoveAnimals {
     void speed();

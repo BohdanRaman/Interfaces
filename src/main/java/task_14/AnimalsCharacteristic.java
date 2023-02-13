@@ -1,4 +1,4 @@
-package task_15;
+package task_14;
 
 public class AnimalsCharacteristic {
     private String name;

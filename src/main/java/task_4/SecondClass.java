@@ -1,6 +1,6 @@
 package task_4;
 
-public class SecondClass {
+public class SecondClass extends FirstAbstractClass {
     private int age;
     private String name;
 
@@ -20,12 +20,12 @@ public class SecondClass {
         this.name = name;
     }
 
-    public void getResult(){
-        System.out.println("age: " + getAge()+ ", name: " + getName());
+    public void getResult() {
+        System.out.println("age: " + getAge() + ", name: " + getName());
     }
 
-    public static void referenceMethod(FirstAbstractClass abstractClass){
-
+    public static void referenceMethod(FirstAbstractClass abstractClass) {
+        referenceMethod(abstractClass);
 
     }
 }

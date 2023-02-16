@@ -3,6 +3,8 @@ package main;
 import task_13.Car;
 import task_14.Animals;
 import task_15.Dog;
+import task_4.FirstAbstractClass;
+import task_4.SecondClass;
 import task_7.Gerbil;
 import task_7.Hamster;
 import task_7.Mouse;
@@ -15,6 +17,10 @@ import task_7.Mouse;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Task 4:");
+        SecondClass abstractClass = new SecondClass();
+
+        System.out.println();
+
 
         System.out.println("Task 7:");
         Mouse mouse = new Mouse();
@@ -62,6 +68,6 @@ public class Main {
         dog.jump();
         dog.sizeFoot();
 
-
+        System.out.println("Task 16:");
     }
 }

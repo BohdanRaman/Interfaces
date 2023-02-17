@@ -1,6 +1,7 @@
 package task_4;
 
 public class SecondClass extends FirstAbstractClass {
+
     private int age;
     private String name;
 
@@ -25,7 +26,6 @@ public class SecondClass extends FirstAbstractClass {
     }
 
     public static void referenceMethod(FirstAbstractClass abstractClass) {
-        referenceMethod(abstractClass);
 
     }
 }

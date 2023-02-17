@@ -17,7 +17,10 @@ import task_7.Mouse;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Task 4:");
-        SecondClass abstractClass = new SecondClass();
+        FirstAbstractClass abstractClass = new SecondClass();
+        SecondClass.referenceMethod(abstractClass);
+        SecondClass secondClass =new SecondClass();
+        secondClass.getResult();
 
         System.out.println();
 

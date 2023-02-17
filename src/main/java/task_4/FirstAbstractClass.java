@@ -9,4 +9,5 @@ package task_4;
  */
 
 public abstract class FirstAbstractClass {
+
 }

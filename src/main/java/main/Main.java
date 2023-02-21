@@ -88,6 +88,7 @@ public class Main {
 
         System.out.println("Task 16:");
         Scanner scanner = new Scanner(System.in);
+
         Scanner s = new Scanner(new Char(7));
         while (s.hasNext())
             System.out.println(s.next());

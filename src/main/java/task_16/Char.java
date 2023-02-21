@@ -23,6 +23,6 @@ public class Char implements Readable {
             return -1;
         cb.append(CHARS[rand.nextInt(CHARS.length)]);
         cb.append(" ");
-       return 1;
+       return 6;
     }
 }

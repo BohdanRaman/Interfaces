@@ -3,11 +3,16 @@ package main;
 import task_13.Car;
 import task_14.Animals;
 import task_15.Dog;
+import task_16.Char;
 import task_4.FirstAbstractClass;
+import task_4.FirstAbstractClassNewSolution;
 import task_4.SecondClass;
+import task_4.SecondClassNewSolution;
 import task_7.Gerbil;
 import task_7.Hamster;
 import task_7.Mouse;
+
+import java.util.Scanner;
 
 /**
  * @author Raman Bohdan
@@ -18,10 +23,19 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Task 4:");
         FirstAbstractClass abstractClass = new SecondClass();
-        SecondClass.referenceMethod(abstractClass);
-        SecondClass secondClass =new SecondClass();
+        SecondClass secondClass = (SecondClass) abstractClass;
+        secondClass.setAge(1);
+        secondClass.setName("bobik");
         secondClass.getResult();
+    //   ((SecondClass) abstractClass).getResult();
+    //   ((SecondClass) abstractClass).setAge(1);
+    //   ((SecondClass) abstractClass).setName("bob");
+    //   ((SecondClass) abstractClass).getResult();
+        SecondClass.referenceMethod(abstractClass);
 
+        /*second solution*/
+        FirstAbstractClassNewSolution firstAbstractClassOne = new SecondClassNewSolution();
+        firstAbstractClassOne.getResultOne();
         System.out.println();
 
 
@@ -70,7 +84,12 @@ public class Main {
         dog.sizeBody();
         dog.jump();
         dog.sizeFoot();
+        System.out.println();
 
         System.out.println("Task 16:");
+        Scanner scanner = new Scanner(System.in);
+        Scanner s = new Scanner(new Char(7));
+        while (s.hasNext())
+            System.out.println(s.next());
     }
 }

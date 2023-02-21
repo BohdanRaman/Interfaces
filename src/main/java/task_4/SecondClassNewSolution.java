@@ -1,7 +1,6 @@
 package task_4;
 
-public class SecondClass extends FirstAbstractClass {
-
+public class SecondClassNewSolution extends FirstAbstractClassNewSolution{
     private int age;
     private String name;
 
@@ -25,8 +24,8 @@ public class SecondClass extends FirstAbstractClass {
         System.out.println("age: " + getAge() + ", name: " + getName());
     }
 
-    public static void referenceMethod(FirstAbstractClass abstractClass) {
-        System.out.println("reference on base class");
-
+    @Override
+    public void getResultOne() {
+        System.out.println("reference on base class with new solution");
     }
 }

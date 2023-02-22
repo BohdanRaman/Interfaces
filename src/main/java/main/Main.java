@@ -27,10 +27,10 @@ public class Main {
         secondClass.setAge(1);
         secondClass.setName("bobik");
         secondClass.getResult();
-    //   ((SecondClass) abstractClass).getResult();
-    //   ((SecondClass) abstractClass).setAge(1);
-    //   ((SecondClass) abstractClass).setName("bob");
-    //   ((SecondClass) abstractClass).getResult();
+        //   ((SecondClass) abstractClass).getResult();
+        //   ((SecondClass) abstractClass).setAge(1);
+        //   ((SecondClass) abstractClass).setName("bob");
+        //   ((SecondClass) abstractClass).getResult();
         SecondClass.referenceMethod(abstractClass);
 
         /*second solution*/
@@ -87,10 +87,8 @@ public class Main {
         System.out.println();
 
         System.out.println("Task 16:");
-        Scanner scanner = new Scanner(System.in);
+        Char c = new Char();
+  //     c.getRead();
 
-        Scanner s = new Scanner(new Char(7));
-        while (s.hasNext())
-            System.out.println(s.next());
     }
 }

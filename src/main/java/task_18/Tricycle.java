@@ -1,4 +1,5 @@
 package task_18;
+
 /**
  * Create a Cycle interface, with implementations Unicycle, Bicycle
  * and Tricycle. Create factories for each type of Cycle, and code that uses these factories.
@@ -6,8 +7,9 @@ package task_18;
 
 public class Tricycle implements Cycle {
     @Override
-    public void countWhiles() {
+    public int countWhiles(int i) {
 
+        return i;
     }
 
     @Override

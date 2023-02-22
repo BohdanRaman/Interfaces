@@ -1,6 +1,7 @@
 package task_18;
 
 public interface Cycle {
-    void countWhiles();
+    int countWhiles(int i);
+
     String WhoCanUseCycle();
 }

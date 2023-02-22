@@ -7,8 +7,9 @@ package task_18;
 
 public class Bicycle implements Cycle {
     @Override
-    public void countWhiles() {
+    public int countWhiles(int i) {
 
+        return i;
     }
 
     @Override

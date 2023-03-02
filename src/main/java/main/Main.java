@@ -3,7 +3,7 @@ package main;
 import task_13.Car;
 import task_14.Animals;
 import task_15.Dog;
-import task_16.Char;
+import task_16.FileWriterClass;
 import task_4.FirstAbstractClass;
 import task_4.FirstAbstractClassNewSolution;
 import task_4.SecondClass;
@@ -12,8 +12,8 @@ import task_7.Gerbil;
 import task_7.Hamster;
 import task_7.Mouse;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * @author Raman Bohdan
@@ -21,7 +21,7 @@ import java.util.Scanner;
  * @since 23.01.2022
  */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("Task 4:");
         FirstAbstractClass abstractClass = new SecondClass();
         SecondClass secondClass = (SecondClass) abstractClass;
@@ -88,13 +88,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Task 16:");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Print chars:");
-        String c = scanner.nextLine();
-        if (c.equals(Arrays.toString(Char.getCHARS()))) {
-            System.out.println(c + ";");
-        }else {
-            System.out.println("Please, print correct char");
-        }
+        FileWriterClass fileWriterClass = new FileWriterClass();
+        fileWriterClass.writeCharToFile();
     }
 }

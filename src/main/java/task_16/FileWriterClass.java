@@ -1,11 +1,10 @@
 package task_16;
 
-import java.io.*;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class FileWriterClass extends Char {
     public void writeCharToFile() {
+        System.out.println("Enter your char:");
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNextLine()) {
             System.out.println(scanner.nextLine());

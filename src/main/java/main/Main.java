@@ -12,16 +12,13 @@ import task_7.Gerbil;
 import task_7.Hamster;
 import task_7.Mouse;
 
-import java.io.File;
-import java.io.IOException;
-
 /**
  * @author Raman Bohdan
  * @version 1.0
  * @since 23.01.2022
  */
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         System.out.println("Task 4:");
         FirstAbstractClass abstractClass = new SecondClass();
         SecondClass secondClass = (SecondClass) abstractClass;
